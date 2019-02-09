@@ -1,0 +1,22 @@
+body{
+    background-color: #d0d0d0;
+    font-family: 'Open Sans';
+}
+
+.aMovie{
+    background-color: white;
+    margin:20px;
+    padding:20px;
+}
+textarea, input{
+    background-color: #f5f5f5 !important;
+    margin:10px;
+    padding:5px;
+    border-radius:10px !important;
+    width:100%;
+}
+
+.addMovie{
+    width:300px;
+    margin: 0 auto;
+}

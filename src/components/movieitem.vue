@@ -1,11 +1,21 @@
 <template>
-    <div>
-        <!-- Contenu d'un item movie --> 
-        <p>{{movie.title}}</p>
-        <p>{{movie.year}}</p>
-        <p>{{movie.synopsys}}</p>
-        <button v-on:click='btnClicked'>X</button>
-        <button v-on:click='btnEdit'>Edit</button>
+    <div class="aMovie">
+        <v-layout row wrap>
+            <v-flex xs12>
+                <p class="title">{{movie.title}}</p>   
+            </v-flex>
+            <v-flex xs12>
+                <p>{{movie.year}}</p>
+            </v-flex>
+            <v-flex xs12>
+                <p>{{movie.synopsys}}</p>
+            </v-flex>
+            <v-flex xs12>
+                <v-btn color="red" v-on:click='btnClicked'>Supprimer</v-btn>
+                <v-btn color="blue" v-on:click='btnEdit'>Modifier</v-btn>
+                <v-btn color="green" v-on:click='btnEdit'>Afficher</v-btn>
+            </v-flex>
+        </v-layout>
     </div>
 </template>
 <script>
