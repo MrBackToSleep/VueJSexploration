@@ -1,12 +1,23 @@
 <template>
     <div class="aMovie">
         <v-layout row wrap>
-            <v-flex xs12>
-                <p class="title">{{movie.title}}</p>   
-            </v-flex>
-            <v-flex xs12>
-                <p>{{movie.year}}</p>
-            </v-flex>
+            <v-layout row wrap>
+                <v-flex xs4>
+                    <v-img
+                    :src="movie.img"
+                    max-height="100px"
+                    contain="true"
+                    />
+                </v-flex>
+                <v-flex xs8>
+                    <v-flex xs12>
+                        <p class="title">{{movie.title}}</p>
+                    </v-flex>
+                    <v-flex xs12>
+                        <p>{{movie.year}}</p>
+                    </v-flex>
+                </v-flex>
+            </v-layout>
             <v-flex xs12>
                 <p>{{movie.synopsys}}</p>
             </v-flex>

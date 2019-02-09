@@ -26,6 +26,8 @@
             <input type="text" v-model="movie_to_add.title" /><br />
             Année de sortie :<br/>
             <input type="text" v-model="movie_to_add.year" /><br />
+            Affiche (lien d'une image) :<br/>
+            <input type="text" v-model="movie_to_add.img" /><br />
             Synopsis :<br/>
             <textarea v-model="movie_to_add.synopsys"></textarea><br />
             <v-btn color="green" v-on:click="newmovie2">Ajouter</v-btn>
