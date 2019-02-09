@@ -6,7 +6,7 @@
                     <v-img
                     :src="movie.img"
                     max-height="100px"
-                    contain="true"
+                    contain
                     />
                 </v-flex>
                 <v-flex xs8>
